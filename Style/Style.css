@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #F5F5F5;
+}
+
+h3 {
+  color: #adbed8;
+}
+
+h4 {
+  color: #adbed8;
+}
+
+a:link {
+    text-decoration: none;
+    color: #FFA500;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FFA500;
+}
+
+a:hover {
+  font-weight: bolder;
+  color: #FFA500;
+}
+
+a::after {
+  display:block;
+  font-weight: lighter;
+  height:1px;
+  color:transparent;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+Header {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px #000;
+  margin: 15px;
+  height: auto;
+  background: url('../Images/motor.jpg') left;
+  background-size: cover;
+}
+
+  .title {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 5px;
+    font-family: 'Kalam', cursive;
+    font-size: 0.8em;
+    }
+
+  .info {
+    font-size: 1.5em;
+    margin-left: 20%;
+    margin-top: 10px;
+    color: #f1ffef;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    color: #f1ffef;
+    cursor: default;
+  }
+
+    .list-item {
+      font-size: inherit;
+      color: #f1ffef;
+    }
+
+.container1 {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  box-shadow: 0 0 15px #000;
+  background-color: #f1ffef;
+  margin: 15px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  background: url('../Images/about-lights.jpg') left;
+}
+  .about {
+    height: auto;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    color: #f1ffef;
+  }
+
+  .class-skills{
+    height: auto;
+    width: 30%;
+    font-size: 1.0em;
+    margin: 10px;
+    padding: 10px;
+    color: #f1ffef;
+  }
+
+  .future-targets{
+    height: auto;
+    width: 30%;
+    font-size: 1.0em;
+    margin: 10px;
+    padding: 10px;
+    color: #f1ffef;
+  }
+
+Footer {
+  background-color: black;
+  /*color: #f1ffef;*/
+  font-family: 'Roboto', sans-serif;
+  color: #FFA500;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px #000;
+
+  background: url('../Images/background-woods.jpg') left;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 0 15px #fff;
+  height: auto;
+  margin: 15px;
+}
+
+  .img-off-ikke {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 50%
+    cursor: grab;
+  }
+
+  .footer-middle {
+    height: auto;
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+  }
