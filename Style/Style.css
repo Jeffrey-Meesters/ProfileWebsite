@@ -154,6 +154,8 @@ Footer {
     padding: 10px;
   }
 
-  .LI-profile-badge {
-    box-shadow: 0 0 0 0 #fff;
+  .contact-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 11px 11px 11px 11px;
   }
