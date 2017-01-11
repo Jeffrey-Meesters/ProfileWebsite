@@ -89,20 +89,21 @@ Header {
   display: flex;
   align-items: baseline;
   flex-direction: row;
-  box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 50px #000;
   background-color: #f1ffef;
   margin: 15px;
   height: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-size: 1.0em;
-  background: url('../Images/about-lights.jpg') left;
+  text-align: justify;
+  color: #00001a;
+  background: url('../Images/about-lights.jpg') left;*/
 }
   .about {
     height: auto;
     width: 30%;
     margin: 10px;
     padding: 10px;
-    color: #f1ffef;
   }
 
   .class-skills{
@@ -111,7 +112,6 @@ Header {
     font-size: 1.0em;
     margin: 10px;
     padding: 10px;
-    color: #f1ffef;
   }
 
   .future-targets{
@@ -120,25 +120,23 @@ Header {
     font-size: 1.0em;
     margin: 10px;
     padding: 10px;
-    color: #f1ffef;
   }
 
 Footer {
-  background-color: black;
-  font-family: 'Roboto', sans-serif;
-  color: #FFA500;
-  font-size: 1.2em;
-  box-shadow: 0 0 15px #000;
-  text-shadow: 0 0 5px #000;
-
-  background: url('../Images/background-woods.jpg') left;
-  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  height: auto;
+  box-shadow: 0 0 15px #000;
+  background-color: #f1ffef;
   margin: 15px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  color: #d9d9d9;
+  text-shadow: 0 0 15px #000;
+  background: url('../Images/background-woods.jpg') left;
+  background-size: cover;
 }
 
   .img-off-ikke {
@@ -154,4 +152,8 @@ Footer {
     width: 25%;
     margin: 10px;
     padding: 10px;
+  }
+
+  .LI-profile-badge {
+    box-shadow: 0 0 0 0 #fff;
   }
