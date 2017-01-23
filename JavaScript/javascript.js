@@ -13,7 +13,9 @@ $(document).ready(function(){
   $(".dontShowEmail").prop('checked', true)
 
   $(".dontShowEmail").click(function(event) {
-    $(".show-email").attr("checked", false)
+    $(".show-email").attr("checked", false),
+    $("#email").css({"visibility": "hidden", "opacity": 0}),
+    $(".shows").empty(),
     showEmail()
   }) // end contact page
 // end of document ready
@@ -29,7 +31,8 @@ function contact() {
 function showEmail(){
   $(".show-email").attr("checked", "checked")
   if($(".show-email").is(":checked")) {
-    $("#email").append("<span id=appended>Type nummers 1 t/m 3 <input type=text id=show oninput=show() placeholder=nummers></input><br></span>")
+    $("#email").append("<span id=appended>Type nummers 1 t/m 3 <input type=text id=show oninput=show() placeholder=nummers></input><br></span>"),
+    $("#email").css({"visibility": "visible", "opacity": 1})
   } else {
     $("#email").empty()
   }
@@ -45,7 +48,7 @@ function show(event){
     var numbers1 = $("input[type=text]").val()
 
     if (numbers1 === "1") {
-      return $("#email").append("<span id=show1 >jjeffrey</span>")
+      return $(".shows").append("<span id=show1 >jjeffrey</span>")
     }
   }
 
@@ -53,7 +56,7 @@ function show(event){
       var numbers2 = $("input[type=text]").val()
 
     if (numbers2 === "12") {
-      return $("#email").append("<span id=show2 >meesters@</span>")
+      return $(".shows").append("<span id=show2 >meesters@</span>")
     }
   }
 
@@ -61,11 +64,17 @@ function show(event){
       var numbers3 = $("input[type=text]").val()
 
     if (numbers3 === "123") {
-      return $("#email").append("<span id=show3 >gmail.com</span>"),
+      return $(".shows").append("<span id=show3 >gmail.com</span>"),
       $("input[type=text]").blur()
     }
   }
 
+  if ($("input[type=text]").val() != "123"){
+    $("#email").empty(),
+    $(".shows").empty(),
+    $("#email").css({"visibility": "hidden", "opacity": 0})
+
+  }
   // Things that are seen, can't be unseen ;)
 }
 // end contact page
