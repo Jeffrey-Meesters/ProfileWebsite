@@ -23,8 +23,12 @@ $(document).ready(function(){
 
 // index page
 function contact() {
-  location.href = "./contact.html";
+  location.href = "./contact";
 };
+
+function indexPage() {
+  location.href = "./";
+}
 // end index page
 
 // contact page

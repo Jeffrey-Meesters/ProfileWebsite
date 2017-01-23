@@ -156,11 +156,10 @@ Header {
 
 Footer {
   text-align: center;
+  padding: 15px;
 }
 
 .contact-page-head {
-  display: flex;
-  flex-direction: column;
   box-shadow: 0 0 10px #000;
   margin: 0px 15px 15px 15px;
   padding: 5px;
@@ -170,17 +169,26 @@ Footer {
   background-color: black;
 }
 
-  .contact-page-head h1 {
-    text-align: center;
+  .logo-box {
+    float: left;
+    height: auto;
+    width: 50%;
+  }
+
+  .text-box {
+    float: right;
+    width: 50%;
+    text-align: left;
     color: white;
   }
 
-  .contact-page-head h3 {
+  .input-box h3 {
     color: #4286f4;
   }
 
   .input-box {
     color: white;
+    clear: both;
   }
 
 #email {
@@ -250,6 +258,19 @@ Footer {
   .logo {
     border: 2px solid black;
     border-radius: 50%;
+    text-align: center;
     padding: 2px;
     font-family: 'Permanent Marker', cursive;
+  }
+
+  .logo2 {
+    clear: right;
+    border: 2px solid white;
+    height: auto;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
   }
