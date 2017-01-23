@@ -133,10 +133,10 @@ Header {
   height: auto;
   font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
-  color: #d9d9d9;
   text-shadow: 0 0 10px #000;
-  background: url('../Images/background-woods.jpg') left;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('../Images/background-woods.jpg') left;
   background-size: cover;
+  background-color: black;
 }
 
   .img-off-ikke {
@@ -152,6 +152,7 @@ Header {
     width: 25%;
     margin: 10px;
     padding: 10px;
+    color: #ffeaea;
   }
 
 Footer {
