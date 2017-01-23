@@ -122,7 +122,7 @@ Header {
     padding: 10px;
   }
 
-Footer {
+.container2 {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -147,18 +147,16 @@ Footer {
     cursor: grab;
   }
 
-  .footer-middle {
+  .container-middle {
     height: auto;
     width: 25%;
     margin: 10px;
     padding: 10px;
   }
 
-  .contact-button {
-    height: 50px;
-    width: 50px;
-    border-radius: 11px 11px 11px 11px;
-  }
+Footer {
+  text-align: center;
+}
 
 .contact-page-head {
   display: flex;
@@ -172,18 +170,18 @@ Footer {
   background-color: black;
 }
 
-.contact-page-head h1 {
-  text-align: center;
-  color: white;
-}
+  .contact-page-head h1 {
+    text-align: center;
+    color: white;
+  }
 
-.contact-page-head h3 {
-  color: #4286f4;
-}
+  .contact-page-head h3 {
+    color: #4286f4;
+  }
 
-.input-box {
-  color: white;
-}
+  .input-box {
+    color: white;
+  }
 
 #email {
   display: flex;
@@ -213,21 +211,45 @@ Footer {
   }
 }
 
-#show1 {
-  animation-duration: 3s;
-  animation-name: slidein;
-  margin-left: 10px;
-  color: blue;
+  #show1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    margin-left: 10px;
+    color: blue;
+    font-size: 50px;
+    text-shadow: 0 0 2px #000;
+  }
+
+  #show2 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    color: red;
+    font-size: 50px;
+    text-shadow: 0 0 2px #000;
+  }
+
+  #show3 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    color: green;
+    font-size: 50px;
+    text-shadow: 0 0 2px #000;
+  }
+
+.contact-page-footer {
+  position: absolute;
+	bottom: 0px;
+	left: 0px;
+  text-align: center;
+  margin: 15px 15px 15px 15px;
+  padding: 5px;
+  height: auto;
+  width: 97%;
 }
 
-#show2 {
-  animation-duration: 3s;
-  animation-name: slidein;
-  color: red;
-}
-
-#show3 {
-  animation-duration: 3s;
-  animation-name: slidein;
-  color: green;
-}
+  .logo {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    font-family: 'Permanent Marker', cursive;
+  }
