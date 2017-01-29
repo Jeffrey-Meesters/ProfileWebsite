@@ -31,11 +31,42 @@ function indexPage() {
 }
 // end index page
 
+// HTML5 Speech Recognition API
+function startDictation() {
+
+  if (!('webkitSpeechRecognition' in window)) {
+    upgrade();
+  } else {
+    var recognition = new webkitSpeechRecognition();
+
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.lang = "en-US";
+    recognition.start();
+
+    recognition.onresult = function(e) {
+      var value1 = $('#transcript').value
+                               = e.results[0][0].transcript;
+
+    recognition.stop();
+      if (value1 === "1 2 3") {
+        $('#transcript').attr(value1),
+        $(".shows").append("<span id=show1 >jjeffreymeesters@gmail.com</span>")
+      }
+    };
+
+    recognition.onerror = function(e) {
+      recognition.stop();
+    }
+  }
+}
+
 // contact page
 function showEmail(){
   $(".show-email").attr("checked", "checked")
   if($(".show-email").is(":checked")) {
-    $("#email").append("<span id=appended>Type nummers 1 t/m 3 <input type=text id=show oninput=show() placeholder=nummers></input><br></span>"),
+    $("#email").append("Type 123 of klik op de microfoon en spreek de getallen uit:<br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /></input></div>"),
     $("#email").css({"visibility": "visible", "opacity": 1})
   } else {
     $("#email").empty()
@@ -74,7 +105,6 @@ function show(event){
   }
 
   if ($("input[type=text]").val() != "123"){
-    $("#email").empty(),
     $(".shows").empty(),
     $("#email").css({"visibility": "hidden", "opacity": 0})
 

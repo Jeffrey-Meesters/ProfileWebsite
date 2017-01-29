@@ -163,8 +163,9 @@ Footer {
 .contact-page-head {
   box-shadow: 0 0 10px #000;
   margin: 0px 15px 15px 15px;
-  padding: 5px;
+  padding: 7px;
   height: auto;
+  width: 97%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: black;
@@ -193,19 +194,41 @@ Footer {
   }
 
 #email {
-  display: flex;
+  display: inline-block;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
   flex-direction: row;
   box-shadow: 0 0 10px #000;
-  padding: 5px;
+  padding: 5px 0px 5px 10px;
   margin: 15px;
+  width: 97%;
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+  #email span {
+    clear: both;
+  }
+
+  #transcript {
+    display: inline-block;
+    float: left;
+    margin: 15px 8px 20px 20px;
+    padding-left: 5px;
+    width: auto;
+    height: 25px;
+  }
+
+  #microphone-img {
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    border: 5px double #E6C410;
+    background-color: #F5DE64;
+    border-radius: 50%;
 }
 
 @keyframes slidein {
@@ -262,16 +285,18 @@ Footer {
     text-align: center;
     padding: 2px;
     font-family: 'Permanent Marker', cursive;
+    background-image: -webkit-radial-gradient(circle, white 50%, black);
   }
 
   .logo2 {
     clear: right;
-    border: 2px solid white;
+    background-image: -webkit-radial-gradient(circle, white 58%, black);
     height: auto;
     width: 30px;
     border-radius: 50%;
     text-align: center;
     padding: 2px;
     font-family: 'Permanent Marker', cursive;
-    color: white;
+    color: black;
+    background-color: #F5F5F5;
   }
