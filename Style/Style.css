@@ -229,7 +229,21 @@ Footer {
     border: 5px double #E6C410;
     background-color: #F5DE64;
     border-radius: 50%;
-}
+  }
+
+  #red-dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    margin: 5px;
+    border: 5px outset;
+  }
+
 
 @keyframes slidein {
   from {

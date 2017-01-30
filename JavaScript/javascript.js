@@ -33,7 +33,7 @@ function indexPage() {
 
 // HTML5 Speech Recognition API
 function startDictation() {
-
+  $("#red-dot").css({"visibility": "visible", "opacity": 1})
   if (!('webkitSpeechRecognition' in window)) {
     upgrade();
   } else {
@@ -45,19 +45,22 @@ function startDictation() {
     recognition.lang = "en-US";
     recognition.start();
 
-    recognition.onresult = function(e) {
+    recognition.onresult = function(event) {
       var value1 = $('#transcript').value
-                               = e.results[0][0].transcript;
+        = event.results[0][0].transcript;
+        $('#transcript').attr('value', value1);
 
-    recognition.stop();
       if (value1 === "1 2 3") {
-        $('#transcript').attr(value1),
-        $(".shows").append("<span id=show1 >jjeffreymeesters@gmail.com</span>")
+        $(".shows").append("<span id=show1 >jjeffreymeesters@gmail.com</span>");
       }
+    recognition.stop();
+    $("#red-dot").css({"visibility": "hidden", "opacity": 0});
     };
 
-    recognition.onerror = function(e) {
+    recognition.onerror = function(event) {
+      return 'Error occurred in recognition: ' + event.error;
       recognition.stop();
+      $("#red-dot").css({"visibility": "hidden", "opacity": 0})
     }
   }
 }
@@ -66,7 +69,7 @@ function startDictation() {
 function showEmail(){
   $(".show-email").attr("checked", "checked")
   if($(".show-email").is(":checked")) {
-    $("#email").append("Type 123 of klik op de microfoon en spreek de getallen uit:<br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /></input></div>"),
+    $("#email").append("Type 123 of klik op de microfoon en spreek de getallen uit:<br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /><div id=red-dot></div></input></div>"),
     $("#email").css({"visibility": "visible", "opacity": 1})
   } else {
     $("#email").empty()
