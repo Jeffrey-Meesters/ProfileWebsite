@@ -13,6 +13,7 @@ h3 {
 
 h4 {
   color: #adbed8;
+  font-size: 0.9em;
 }
 
 a:link {
@@ -33,10 +34,10 @@ a:hover {
 a::after {
   display:block;
   font-weight: lighter;
-  height:1px;
-  color:transparent;
-  overflow:hidden;
-  visibility:hidden;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 a:active {
@@ -44,11 +45,13 @@ a:active {
 }
 
 Header {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   box-shadow: 0 0 10px #000;
   margin: 15px;
+  padding: 16px;
   height: auto;
+  max-width: 100%;
   background: url('../Images/motor.jpg') left;
   background-size: cover;
 }
@@ -62,11 +65,18 @@ Header {
     font-size: 0.8em;
     }
 
+  .intro {
+    display: block;
+    font-size: xx-large;
+    margin-bottom: 2px;
+  }
+
   .info {
-    font-size: 1.5em;
-    margin-left: 20%;
-    margin-top: 10px;
     color: #f1ffef;
+  }
+
+  #skills {
+    font-weight: bold;
   }
 
   .skills-list {
@@ -86,78 +96,82 @@ Header {
     }
 
 .container1 {
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
-  flex-direction: row;
+  flex-direction: column;
   box-shadow: 0 0 10px #000;
   background-color: #f1ffef;
   margin: 15px;
   height: auto;
+  max-width: 100%;
   font-family: sans-serif;
-  font-size: 1.0em;
-  text-align: justify;
+  text-align: left;
   color: #00001a;
-  background: url('../Images/about-lights.jpg') left;*/
+  background: url(../Images/about-lights.jpg) left;
+  background-size: cover;
 }
   .about {
     height: auto;
-    width: 30%;
+    max-width: 100%;
     margin: 10px;
     padding: 10px;
   }
 
   .class-skills{
     height: auto;
-    width: 30%;
-    font-size: 1.0em;
-    margin: 10px;
+    max-width: 100%;
     padding: 10px;
+    margin: 10px;
   }
 
   .future-targets{
     height: auto;
-    width: 30%;
-    font-size: 1.0em;
+    max-width: 100%;
     margin: 10px;
     padding: 10px;
   }
 
 .container2 {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   box-shadow: 0 0 15px #000;
   background-color: #f1ffef;
   margin: 15px;
   height: auto;
+  max-width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.0em;
   text-shadow: 0 0 10px #000;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('../Images/background-woods.jpg') left;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../Images/background-woods.jpg) left;
   background-size: cover;
-  background-color: black;
 }
 
   .img-off-ikke {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin-top: 50%
-    cursor: grab;
+    margin: 15px;
   }
 
   .container-middle {
     height: auto;
-    width: 25%;
+    max-width: 100%;
+    text-align: center;
     margin: 10px;
     padding: 10px;
     color: #ffeaea;
   }
 
+  .LI-profile-badge {
+    margin: 10px;
+  }
+
 Footer {
   text-align: center;
   padding: 15px;
+  margin: 15px;
+  line-height: 160%;
 }
 
 .contact-page-head {
@@ -165,7 +179,7 @@ Footer {
   margin: 0px 15px 15px 15px;
   padding: 7px;
   height: auto;
-  width: 97%;
+  max-width: 100%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: black;
@@ -174,14 +188,12 @@ Footer {
   .logo-box {
     float: left;
     height: auto;
-    width: 50%;
+    max-width: 50%;
   }
 
   .text-box {
-    float: right;
-    width: 50%;
-    text-align: left;
     color: white;
+    text-align: center;
   }
 
   .input-box h3 {
@@ -202,7 +214,7 @@ Footer {
   box-shadow: 0 0 10px #000;
   padding: 5px 0px 5px 10px;
   margin: 15px;
-  width: 97%;
+  max-width: 100%;
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -284,7 +296,7 @@ Footer {
   }
 
   to {
-    margin-left: 0%;
+    margin-left: 15px;
     width: 100%;
   }
 }
@@ -292,9 +304,9 @@ Footer {
   #show1 {
     animation-duration: 3s;
     animation-name: slidein;
-    margin-left: 10px;
+    margin-left: 15px;
     color: blue;
-    font-size: 50px;
+    font-size: 1.5em;
     text-shadow: 0 0 2px #000;
   }
 
@@ -302,7 +314,7 @@ Footer {
     animation-duration: 3s;
     animation-name: slidein;
     color: red;
-    font-size: 50px;
+    font-size: 1.5em;
     text-shadow: 0 0 2px #000;
   }
 
@@ -310,7 +322,7 @@ Footer {
     animation-duration: 3s;
     animation-name: slidein;
     color: green;
-    font-size: 50px;
+    font-size: 1.5em;
     text-shadow: 0 0 2px #000;
   }
 
@@ -319,10 +331,9 @@ Footer {
 	bottom: 0px;
 	left: 0px;
   text-align: center;
-  margin: 15px 15px 15px 15px;
-  padding: 5px;
-  height: auto;
-  width: 97%;
+  padding: 15px;
+  margin: 15px;
+  line-height: 160%;
 }
 
   .logo {
