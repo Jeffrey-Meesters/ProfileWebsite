@@ -18,6 +18,7 @@ $(document).ready(function(){
     $(".shows").empty(),
     showEmail()
   }) // end contact page
+
 // end of document ready
 });
 
@@ -69,7 +70,7 @@ function startDictation() {
 function showEmail(){
   $(".show-email").attr("checked", "checked")
   if($(".show-email").is(":checked")) {
-    $("#email").append("Type 123 of klik op de microfoon en spreek de getallen uit:<br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /><div id=red-dot></div></input></div>"),
+    $("#email").append("Type 123 of klik op de microfoon en spreek de getallen uit (engels):<br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /><div id=red-dot></div></input><span id=info>Werkt de microfoon niet?<span id=tiptext>De microfoon is alleen bruikbaar in up to date browsers van Google Chrome en Firefox.</span></span></div>"),
     $("#email").css({"visibility": "visible", "opacity": 1})
   } else {
     $("#email").empty()
