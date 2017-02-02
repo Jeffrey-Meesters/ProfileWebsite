@@ -244,6 +244,38 @@ Footer {
     border: 5px outset;
   }
 
+  #info {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    border-bottom: 1px dotted black;
+}
+
+  #info #tiptext {
+    width: 200px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -109px;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+}
+
+  #info:hover {
+    color: red;
+  }
+
+  #info:hover #tiptext {
+    visibility: visible;
+}
 
 @keyframes slidein {
   from {
