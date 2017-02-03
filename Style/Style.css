@@ -1,19 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body{
   background-color: #F5F5F5;
+  margin: 2%;
 }
 
 h3 {
   color: #adbed8;
+  margin: 0px;
 }
 
 h4 {
-  color: #adbed8;
+  color: yellow;
   font-size: 0.9em;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }
 
 a:link {
@@ -44,12 +51,11 @@ a:active {
     text-decoration: none;
 }
 
-Header {
+.header {
   display: inline-flex;
   flex-direction: column;
+  margin-bottom: 15px;
   box-shadow: 0 0 10px #000;
-  margin: 15px;
-  padding: 16px;
   height: auto;
   max-width: 100%;
   background: url('../Images/motor.jpg') left;
@@ -73,6 +79,7 @@ Header {
 
   .info {
     color: #f1ffef;
+    margin-left: 10px;
   }
 
   #skills {
@@ -84,7 +91,8 @@ Header {
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
-    margin-left: 2%;
+    margin-top: 3px;
+    margin-left: 20px;
     margin-bottom: 10px;
     color: #f1ffef;
     cursor: default;
@@ -101,7 +109,7 @@ Header {
   flex-direction: column;
   box-shadow: 0 0 10px #000;
   background-color: #f1ffef;
-  margin: 15px;
+  margin-bottom: 15px;
   height: auto;
   max-width: 100%;
   font-family: sans-serif;
@@ -114,21 +122,18 @@ Header {
     height: auto;
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
   }
 
   .class-skills{
     height: auto;
     max-width: 100%;
-    padding: 10px;
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
   }
 
   .future-targets{
     height: auto;
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
   }
 
 .container2 {
@@ -138,7 +143,6 @@ Header {
   justify-content: space-around;
   box-shadow: 0 0 15px #000;
   background-color: #f1ffef;
-  margin: 15px;
   height: auto;
   max-width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -169,11 +173,50 @@ Header {
 
 Footer {
   text-align: center;
-  padding: 15px;
-  margin: 15px;
+  min-width: 100%;
+  margin-top: 15px;
   line-height: 160%;
 }
 
+  .contact-button {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 444px) {
+    .header {
+      min-width: 100%;
+    }
+
+    .container2 {
+      min-width: 100%;
+    }
+
+    Footer {
+      min-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .container1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .about {
+      max-width: 46%;
+    }
+
+    .class-skills {
+      max-width: 47%;
+    }
+
+    .future-targets {
+      max-width: 100%;
+    }
+  }
+
+/*--############------------Contact page---------############----------*/
 .contact-page-head {
   box-shadow: 0 0 10px #000;
   margin: 0px 15px 15px 15px;
