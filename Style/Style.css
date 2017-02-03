@@ -214,6 +214,11 @@ Footer {
     .future-targets {
       max-width: 100%;
     }
+
+    .container2 {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
 /*--############------------Contact page---------############----------*/
