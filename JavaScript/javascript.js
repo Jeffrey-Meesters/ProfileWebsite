@@ -2,11 +2,12 @@ $(document).ready(function(){
 
 // index page
   $(".list-item").hover(function(event){
-    $(this).css({"font-size": 25, "color": "#FFD700"})
+    $(this).css({"font-size": "1.2em", "color": "#FFD700"})
   },
   function(){
     $(this).css({"font-size": "inherit", "color": "inherit"})
   });
+
 // end index page
 
 // contact page
@@ -30,6 +31,7 @@ function contact() {
 function indexPage() {
   location.href = "./";
 }
+
 // end index page
 
 // HTML5 Speech Recognition API
@@ -70,7 +72,7 @@ function startDictation() {
 function showEmail(){
   $(".show-email").attr("checked", "checked")
   if($(".show-email").is(":checked")) {
-    $("#email").append("Type 123 of klik op de microfoon en spreek de getallen uit (engels):<br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /><div id=red-dot></div></input><span id=info>Werkt de microfoon niet?<span id=tiptext>De microfoon is alleen bruikbaar in up to date browsers van Google Chrome en Firefox.</span></span></div>"),
+    $("#email").append("<div id=info-input>Type 123 of klik op de microfoon en spreek de getallen uit (engels):</div><br><div id=appended><input type=text name=q id=transcript oninput=show() placeholder=nummers><img onclick=startDictation() id=microphone-img src=../Images/microphone.png /><div id=red-dot></div></input><span id=info>Werkt de microfoon niet?<span id=tiptext>De microfoon is alleen bruikbaar in up to date browsers van Google Chrome en Firefox.</span></span></div>"),
     $("#email").css({"visibility": "visible", "opacity": 1})
   } else {
     $("#email").empty()

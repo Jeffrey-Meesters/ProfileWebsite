@@ -1,18 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
+  /*margin: 0px;*/
+  padding: 0px;
 }
 
-body{
+body {
   background-color: #F5F5F5;
+  margin: 2%;
 }
 
 h3 {
   color: #adbed8;
+  margin: 0px;
 }
 
 h4 {
-  color: #adbed8;
+  color: yellow;
+  font-size: 0.9em;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }
 
 a:link {
@@ -33,22 +41,23 @@ a:hover {
 a::after {
   display:block;
   font-weight: lighter;
-  height:1px;
-  color:transparent;
-  overflow:hidden;
-  visibility:hidden;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 a:active {
     text-decoration: none;
 }
 
-Header {
-  display: flex;
+#header {
+  display: inline-flex;
   flex-direction: column;
+  margin-bottom: 15px;
   box-shadow: 0 0 10px #000;
-  margin: 15px;
   height: auto;
+  max-width: 100%;
   background: url('../Images/motor.jpg') left;
   background-size: cover;
 }
@@ -62,11 +71,20 @@ Header {
     font-size: 0.8em;
     }
 
+  .intro {
+    display: block;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 2px;
+  }
+
   .info {
-    font-size: 1.5em;
-    margin-left: 20%;
-    margin-top: 10px;
     color: #f1ffef;
+    margin-left: 10px;
+  }
+
+  #skills {
+    font-weight: bold;
   }
 
   .skills-list {
@@ -74,7 +92,8 @@ Header {
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
-    margin-left: 2%;
+    margin-top: 3px;
+    margin-left: 20px;
     margin-bottom: 10px;
     color: #f1ffef;
     cursor: default;
@@ -85,245 +104,140 @@ Header {
       color: #f1ffef;
     }
 
-.container1 {
-  display: flex;
+#container1 {
+  display: inline-flex;
   align-items: baseline;
-  flex-direction: row;
+  flex-direction: column;
   box-shadow: 0 0 10px #000;
   background-color: #f1ffef;
-  margin: 15px;
+  margin-bottom: 15px;
   height: auto;
+  max-width: 100%;
   font-family: sans-serif;
-  font-size: 1.0em;
-  text-align: justify;
+  text-align: left;
   color: #00001a;
-  background: url('../Images/about-lights.jpg') left;*/
+  background: url('../Images/about-lights.jpg') left;
+  background-size: cover;
 }
+
   .about {
     height: auto;
-    width: 30%;
+    max-width: 100%;
     margin: 10px;
-    padding: 10px;
   }
 
   .class-skills{
     height: auto;
-    width: 30%;
-    font-size: 1.0em;
-    margin: 10px;
-    padding: 10px;
+    max-width: 100%;
+    margin: 0px 10px 0px 10px;
   }
 
   .future-targets{
     height: auto;
-    width: 30%;
-    font-size: 1.0em;
+    max-width: 100%;
     margin: 10px;
-    padding: 10px;
   }
 
-.container2 {
-  display: flex;
+#container2 {
+  display: inline-flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   box-shadow: 0 0 15px #000;
   background-color: #f1ffef;
-  margin: 15px;
   height: auto;
+  max-width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.0em;
   text-shadow: 0 0 10px #000;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('../Images/background-woods.jpg') left;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../Images/background-woods.jpg) left;
   background-size: cover;
-  background-color: black;
 }
 
   .img-off-ikke {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin-top: 50%
-    cursor: grab;
+    margin: 15px;
   }
 
   .container-middle {
     height: auto;
-    width: 25%;
+    max-width: 100%;
+    text-align: center;
     margin: 10px;
     padding: 10px;
     color: #ffeaea;
   }
 
+  .LI-profile-badge {
+    margin: 10px;
+  }
+
 Footer {
   text-align: center;
-  padding: 15px;
+  min-width: 100%;
+  margin-top: 15px;
+  line-height: 160%;
 }
 
-.contact-page-head {
-  box-shadow: 0 0 10px #000;
-  margin: 0px 15px 15px 15px;
-  padding: 7px;
-  height: auto;
-  width: 97%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: black;
-}
-
-  .logo-box {
-    float: left;
-    height: auto;
-    width: 50%;
+  .contact-button {
+    text-decoration: underline;
   }
 
-  .text-box {
-    float: right;
-    width: 50%;
-    text-align: left;
-    color: white;
+  @media screen and (min-width: 444px) {
+    #header {
+      min-width: 100%;
+    }
+
+    #container2 {
+      min-width: 100%;
+    }
+
+    Footer {
+      min-width: 100%;
+    }
   }
 
-  .input-box h3 {
-    color: #4286f4;
+  @media screen and (min-width: 700px) {
+
+    #header {
+      /*height: 103%;*/
+    }
+
+    .title {
+      font-size: 2.0em;
+    }
+
+    .info {
+      margin-left: 50px;
+      font-size: 3.0em;
+    }
+
+    #container1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .about {
+      max-width: 46%;
+    }
+
+    .class-skills {
+      max-width: 47%;
+    }
+
+    .future-targets {
+      margin-left: 11.5%;
+      max-width: 75%;
+      text-align: center;
+    }
+
+    #container2 {
+      display: flex;
+      flex-direction: row;
+    }
   }
-
-  .input-box {
-    color: white;
-    clear: both;
-  }
-
-#email {
-  display: inline-block;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-  flex-direction: row;
-  box-shadow: 0 0 10px #000;
-  padding: 5px 0px 5px 10px;
-  margin: 15px;
-  width: 97%;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-  #email span {
-    clear: both;
-  }
-
-  #transcript {
-    display: inline-block;
-    float: left;
-    margin: 15px 8px 20px 20px;
-    padding-left: 5px;
-    width: auto;
-    height: 25px;
-  }
-
-  #microphone-img {
-    display: inline-block;
-    margin: 10px 0px 0px 0px;
-    border: 5px double #E6C410;
-    background-color: #F5DE64;
-    border-radius: 50%;
-  }
-
-  #red-dot {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    margin: 5px;
-    border: 5px outset;
-  }
-
-  #info {
-    position: relative;
-    display: inline-block;
-    float: right;
-    margin-right: 10px;
-    border-bottom: 1px dotted black;
-}
-
-  #info #tiptext {
-    width: 200px;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -109px;
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-}
-
-  #info:hover {
-    color: red;
-  }
-
-  #info:hover #tiptext {
-    visibility: visible;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-  #show1 {
-    animation-duration: 3s;
-    animation-name: slidein;
-    margin-left: 10px;
-    color: blue;
-    font-size: 50px;
-    text-shadow: 0 0 2px #000;
-  }
-
-  #show2 {
-    animation-duration: 3s;
-    animation-name: slidein;
-    color: red;
-    font-size: 50px;
-    text-shadow: 0 0 2px #000;
-  }
-
-  #show3 {
-    animation-duration: 3s;
-    animation-name: slidein;
-    color: green;
-    font-size: 50px;
-    text-shadow: 0 0 2px #000;
-  }
-
-.contact-page-footer {
-  position: absolute;
-	bottom: 0px;
-	left: 0px;
-  text-align: center;
-  margin: 15px 15px 15px 15px;
-  padding: 5px;
-  height: auto;
-  width: 97%;
-}
 
   .logo {
     border: 2px solid black;
@@ -332,17 +246,4 @@ Footer {
     padding: 2px;
     font-family: 'Permanent Marker', cursive;
     background-image: -webkit-radial-gradient(circle, white 50%, black);
-  }
-
-  .logo2 {
-    clear: right;
-    background-image: -webkit-radial-gradient(circle, white 58%, black);
-    height: auto;
-    width: 30px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 2px;
-    font-family: 'Permanent Marker', cursive;
-    color: black;
-    background-color: #F5F5F5;
   }
