@@ -1,19 +1,19 @@
 * {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 body {
-  margin: 0px;
   padding: 0px;
+  margin: 2%;
 }
 
 .contact-page-head {
   box-shadow: 0 0 10px #000;
-  margin: 0px 15px 15px 15px;
-  padding: 7px;
+  margin-top: -2%;
+  padding: 5px 0px 5px 10px;
   height: auto;
-  width: 97%;
+  max-width: 100%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: black;
@@ -22,14 +22,14 @@ body {
   .logo-box {
     float: left;
     height: auto;
-    width: 50%;
+    max-width: 100%;
+    max-width: 50%;
   }
 
   .text-box {
-    float: right;
-    width: 50%;
-    text-align: left;
+    max-width: 100%;
     color: white;
+    text-align: center;
   }
 
   .input-box h3 {
@@ -37,6 +37,7 @@ body {
   }
 
   .input-box {
+    max-width: 100%;
     color: white;
     clear: both;
   }
@@ -48,15 +49,18 @@ body {
   transition: visibility 0s, opacity 0.5s linear;
   flex-direction: row;
   box-shadow: 0 0 10px #000;
-  padding: 5px 0px 5px 10px;
-  margin: 15px;
-  width: 97%;
+  margin-top: 15px;
+  max-width: 100%;
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+  #info-input {
+    padding-left: 10px;
+  }
 
   #email span {
     clear: both;
@@ -97,7 +101,8 @@ body {
     display: inline-block;
     float: right;
     margin-right: 10px;
-    border-bottom: 1px dotted black;
+    padding: 0px 5px 5px 0px;
+    text-decoration: underline;
 }
 
   #info #tiptext {
@@ -132,7 +137,7 @@ body {
   }
 
   to {
-    margin-left: 0%;
+    margin-left: 15px;
     width: 100%;
   }
 }
@@ -140,9 +145,9 @@ body {
   #show1 {
     animation-duration: 3s;
     animation-name: slidein;
-    margin-left: 10px;
+    margin-left: 15px;
     color: blue;
-    font-size: 50px;
+    font-size: 1.5em;
     text-shadow: 0 0 2px #000;
   }
 
@@ -150,7 +155,7 @@ body {
     animation-duration: 3s;
     animation-name: slidein;
     color: red;
-    font-size: 50px;
+    font-size: 1.5em;
     text-shadow: 0 0 2px #000;
   }
 
@@ -158,19 +163,18 @@ body {
     animation-duration: 3s;
     animation-name: slidein;
     color: green;
-    font-size: 50px;
+    font-size: 1.5em;
     text-shadow: 0 0 2px #000;
   }
 
 .contact-page-footer {
   position: absolute;
+  max-width: 100%;
 	bottom: 0px;
 	left: 0px;
   text-align: center;
-  margin: 15px 15px 15px 15px;
-  padding: 5px;
-  height: auto;
-  width: 97%;
+  padding: 15px;
+  line-height: 160%;
 }
 
   .logo {
@@ -193,4 +197,20 @@ body {
     font-family: 'Permanent Marker', cursive;
     color: black;
     background-color: #F5F5F5;
+  }
+
+  @media screen and (min-width: 597px) {
+    .shows {
+      font-size: 2em;
+    }
+  }
+
+  @media screen and (min-width: 427px) {
+    #email {
+      min-width: 100%;
+    }
+
+    .contact-page-footer {
+      min-width: 100%;
+    }
   }
