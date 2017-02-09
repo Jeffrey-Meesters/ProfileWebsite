@@ -4,7 +4,7 @@ My profile website [(not so much anymore) Work In Progress]
 
 ## Goal of this project
 The goal of this project is to show that I know how to use JS (JQuery), CSS and HTML5.
-And with that make a responsive webdesign. So it's not so much about to content itself (stange hu, for a profile website!).
+And with that make a responsive webdesign. So it's not so much about to content itself (strange hu, for a profile website!).
 That is also why I sometimes have chosen to use JS over CSS, while CSS would've been the easier solution.
 
 Am I hapy with the content? Not so.
