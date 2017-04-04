@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YO</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 660px)" href="Style/new_index_mobile_style.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 660px)" href="Style/new_index_desktop_style.css">
+
+  <!-- GOOGLE fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(window).scroll(function() {
+    var me = $(".me");
+    var window_offset = me.offset().top - $(window).scrollTop();
+
+    if (window_offset <= 0) {
+      $(".bg").css({"z-index": "-3"});
+      $(".bg2").css({"position": "fixed"});
+      $(".bg2").css({"top": "0px"});
+    } else {
+      $(".bg").css({"z-index": "-1"});
+      $(".bg2").css({"position": "absolute"});
+      $(".bg2").css({"top": "750px"});
+    }
+  });
+  </script>
+
+</head>
+<body>
+
+  <img src="./Images/huacachina.jpg" class="bg"></img>
+  <img src="./Images/board-head-img.jpg" class="bg2"></img>
+
+
+  <div class="fixed-head">
+    <span id="head-arrow-left">&#8744;</span>
+      Jeffrey Meesters,
+      <br>
+      Jr. Webdeveloper.
+    <span id="head-arrow-right">&#8744;</span>
+  </div>
+
+  <div class="me">
+    <div class="me-text">
+      <p>Hi!
+        <br>
+        <a href="#">I'm Jeffrey</a>. Currently available for job-openings in ICT.
+        I've been re-schooled to webdeveloper by Codaisseur and graduated last December.
+      </p>
+
+      <p>
+        Before I started my re-schooling with Codaisseur I was working for the Rabobank for 2 years.
+        First as Commercial Assistant Small Businesses and soon after became Commercial Advisor Small Businesses.
+        I Chose to work here as initually I graduated as Financial Advisor from the University of Amsterdam (HvA) in 2013.
+      </p>
+
+      <p>
+        While working for the Rabobank my attention got more and more drawn to creating websites and so I started creating simple ones.
+        I only used HTML and CSS, nothing fancy. As it became clear that the financial companies are increasingly automating
+        their interaction with the client, and therefore where reorganizing, I was looking for a way out. I found out about Codaisseur
+        and decided to commit myself to become a developer.
+      </p>
+    </div>
+  </div>
+
+  <div class="codaisseur">
+    <div class="codaisseur-text">
+      <p>
+      <a href="#">Codaisseur:</a>
+      Codaisseur offers a graduate program that enabled me, within a short period of time, to learn what it means to be a webdeveloper.
+      The graduate program is very intensive. Weeks of 70 hours and longer are no exception and the subject matter is diverse and extensive.
+      </p>
+      <p>
+      Subjects:
+      The traineeship has the following topics: <em> Ruby, RSpec, Rails, JS / Node (incl. ES6), Mocha, Chai, React, Redux, SQL, HTML5, and CSS3 </em>.
+      In addition, the following aspects of development are also discussed: <em> Create reviews and quality assessments,
+      TDD, the basis of product development, UX design, domain modeling </em>
+      and of course <em> teamwork </em> using tools like <em> Atom, git, Github, CI and Slack</em>.
+      </p>
+    </div>
+  </div>
+
+  <div class="projects">
+    <div class="projects-text">
+      <p>
+        When re-schooling with Codaisseur we did a lot of projects.
+        Also after I was done I kept coding and started own projects.
+        I'd like to showcase a <u>few</u> of them here.
+      </p>
+      <div class="box-container">
+        <div class="project-box" id="box-1">
+          <img src="http://res.cloudinary.com/debyt5msz/image/upload/v1480600155/Schermafbeelding_2016-12-01_om_14.47.47_t0vwe5.png" class="box-img" />
+          <div class="box-text">
+            <p>
+              <a href="#">Shoe-store:</a>
+              <br>
+              A RoR project with working Stripe check-out.
+              Focus on RoR and, thus back-end.
+              <br>
+              After Codaisseur.
+            </p>
+          </div>
+        </div>
+        <div class="project-box" id="box-2">
+          <img src="http://res.cloudinary.com/debyt5msz/image/upload/v1486463330/Schermafbeelding_2017-02-07_om_11.27.36_s1blgo.png" class="box-img" />
+          <div class="box-text">
+            <p>
+              <a href="#">ProfileWebsite:</a>
+              <br>
+              It actually is this website.
+              I put some time in it and made multiple pages.
+              Focus on HTML, CSS and JS, thus front-end.
+              <br>
+              After Codaisseur.
+            </p>
+          </div>
+        </div>
+        <div class="project-box" id="box-3">
+          <img src="http://res.cloudinary.com/debyt5msz/image/upload/v1479894916/Schermafbeelding_2016-11-23_om_10.53.39_zzza4x.png" class="box-img" />
+          <div class="box-text">
+            <p>
+              <a href="#">React-shooter:</a>
+              <br>
+              This one was quit hard.
+              It is a two-player reaction game based on:
+              Feathers, React, Redux and MongoDb.
+              Focus: Mainly getting the React part to work as a lot of back-end was already provided (and live-coded) by Codaisseur.
+              <br>
+              During Codaisseurs' internship.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
