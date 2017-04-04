@@ -40,7 +40,12 @@ img.bg2 {
   z-index: 1;
 }
 
-#head-arrow {
+#head-arrow-left {
+  visibility: hidden;
+  content: "\2228";
+}
+
+#head-arrow-right {
   visibility: hidden;
   content: "\2228";
 }
